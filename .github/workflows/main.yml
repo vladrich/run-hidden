@@ -26,7 +26,7 @@ jobs:
 
       - name: List Files
         run: |
-          dir /s
+          ls -R
 
       - name: Publish archive
         uses: softprops/action-gh-release@v1
