@@ -23,7 +23,11 @@ jobs:
 
       - name: Build app for release
         run: msbuild run-hidden.vcxproj -t:rebuild -verbosity:diag -property:Configuration=Release
-        
+
+      - name: List Files
+        run: |
+          dir /s
+
       - name: Publish archive
         uses: softprops/action-gh-release@v1
         with:
