@@ -13,6 +13,8 @@ jobs:
           - kind: windows
             os: windows-latest
     runs-on: ${{ matrix.os }}
+    permissions:
+      contents: write
 
     steps:
       - name: checkout
